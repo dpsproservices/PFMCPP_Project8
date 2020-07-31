@@ -52,6 +52,12 @@ send me a DM to check your pull request
 #include <algorithm>
 #include <cassert>
 
+#include "Highway.h"
+#include "HighwayPatrol.h"
+#include "Car.h"
+#include "Motorcycle.h"
+#include "SemiTruck.h"
+
 int main()
 {
     Highway highway;
@@ -87,7 +93,7 @@ int main()
      
      reserve how ever many cars, motorcycles, and trucks you'll create first
      */
-    cars.reserve(3); //reserving room for 3 Car instances
+    //cars.reserve(3); //reserving room for 3 Car instances
     
     /*
      Now that we have reserved space for our UDT instances inside the vector, we can construct them in-place inside the vector.
@@ -95,7 +101,7 @@ int main()
      
      use the vector member function 'emplace_back' to construct your car/truck/motorcycle instances in-place
      */
-    cars.emplace_back("janice"); //constructing the first Car instance in-place in the cars vector
+    //cars.emplace_back("janice"); //constructing the first Car instance in-place in the cars vector
     
     /*
      construct 2 more Car instances via emplace_back.
@@ -113,7 +119,7 @@ int main()
     //be careful to not accidentally make element copies when iterating.
     
     HighwayPatrol cop;
-    cop.scanHighway(&highway);
+    //cop.scanHighway(&highway);
 
     std::cout << "done" << std::endl;
 
