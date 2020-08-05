@@ -12,7 +12,5 @@ struct Car : public Vehicle
 
     void closeWindows();
 
-    void setSpeed(int s) override;
-
     void tryToEvade() override;
 };
