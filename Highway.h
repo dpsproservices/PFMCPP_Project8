@@ -2,9 +2,11 @@
 
 #include <vector>
 #include <algorithm>
+#include "Vehicle.h"
 
 struct Highway
 {
+    friend struct HighwayPatrol;
     void changeSpeed(int newSpeed);
     void addVehicle(Vehicle* v);
     void removeVehicle(Vehicle* v);
