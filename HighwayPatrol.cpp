@@ -4,10 +4,7 @@
 #include "Motorcycle.h"
 #include "SemiTruck.h"
 
-HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
-{
-
-}
+HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol") { }
 
 void HighwayPatrol::scanHighway(Highway* h)
 {
