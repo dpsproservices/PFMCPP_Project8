@@ -127,20 +127,20 @@ int main()
 
     //  6) Add some Cars to the Highway
 
-    for( Car& car : cars ) 
+    for( auto& car : cars ) 
     {
         highway.addVehicle(&car);
     }
 
     //  7) Add some Motorcycles to the Highway
  
-    for( Motorcycle& motorcycle : motorcycles ) 
+    for( auto& motorcycle : motorcycles ) 
     {
         highway.addVehicle(&motorcycle);
     }
 
     //  8) Add some SemiTrucks to the highway.
-    for( SemiTruck& semitruck : trucks ) 
+    for( auto& semitruck : trucks ) 
     {
         highway.addVehicle(&semitruck);
     }
