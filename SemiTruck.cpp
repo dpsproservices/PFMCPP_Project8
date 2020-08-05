@@ -15,3 +15,9 @@ void SemiTruck::pullOver()
     setSpeed(0);
     std::cout << name << ": hello officer, what seems to be the problem?" << std::endl;
 }
+
+void SemiTruck::cruiseInRightLane()
+{
+    setSpeed(55);
+    std::cout << name << ": gonna set cruise control and listen to some tunes." << std::endl;
+}
