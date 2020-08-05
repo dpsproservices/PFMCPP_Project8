@@ -127,16 +127,19 @@ int main()
 
     for( Car& car : cars ) 
     {
+        std::cout << "car address: " << &car << std::endl;
         highway.addVehicle(&car);
     }
 
     for( Motorcycle& motorcycle : motorcycles ) 
     {
+        std::cout << "motorcycle address: " << &motorcycle << std::endl;
         highway.addVehicle(&motorcycle);
     }
 
     for( SemiTruck& semitruck : trucks ) 
     {
+        std::cout << "semitruck address: " << &semitruck << std::endl;
         highway.addVehicle(&semitruck);
     }
 

@@ -23,14 +23,17 @@ void Highway::addVehicleInternal(Vehicle* v)
     */
     if( auto* car = dynamic_cast<Car*>(v))
     {
+        //std::cout << "car" << std::endl;
         car->setSpeed(speedLimit);
     }
     else if( auto* motorcycle = dynamic_cast<Motorcycle*>(v) )
     {
+        //std::cout << "motorcycle" << std::endl;
         motorcycle->setSpeed(speedLimit);
     }
     else if( auto* semitruck = dynamic_cast<SemiTruck*>(v) )
     {
+        //std::cout << "truck" << std::endl;
         semitruck->setSpeed(speedLimit);
     }
 }
