@@ -18,6 +18,5 @@ void Car::tryToEvade()
 
 void Car::setSpeed(int s)
 {
-
     Vehicle::setSpeed(s);
 }
