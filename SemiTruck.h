@@ -6,13 +6,7 @@ struct SemiTruck : public Vehicle
 {
     SemiTruck(const std::string& n);
 
-    ~SemiTruck() override;
+    void setSpeed(int s) override;
 
-    SemiTruck(const SemiTruck&);
-
-    SemiTruck& operator=(const SemiTruck&);
-
-    void setSpeed(int s);
-
-    void tryToEvade();
+    void tryToEvade() override;
 };
