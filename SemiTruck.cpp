@@ -2,13 +2,12 @@
 
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n) {}
 
-void SemiTruck::setSpeed(int s)
-{
-    Vehicle::setSpeed(s);
-}
+SemiTruck::~SemiTruck() = default;
+SemiTruck::SemiTruck(const SemiTruck&) = default;
+SemiTruck& SemiTruck::operator = (const SemiTruck&) = default;
 
-void SemiTruck::tryToEvade()
+void SemiTruck::pullOver()
 {
     setSpeed(0);
-    std::cout << name << ": hello officer, what seems to be the problem?" << std::endl;
+    std::cout << name << ": what's duh problem, bub?" << std::endl;
 }

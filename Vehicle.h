@@ -8,7 +8,7 @@ struct Vehicle
     friend struct HighwayPatrol;
     Vehicle(const std::string& n) : name(n) { }
     
-    virtual ~Vehicle() = default;
+    virtual ~Vehicle();
     Vehicle(const Vehicle&) = default;
     Vehicle& operator=(const Vehicle&) = default;
     
