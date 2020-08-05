@@ -5,6 +5,7 @@
 
 struct Vehicle
 {
+    friend struct HighwayPatrol;
     Vehicle(const std::string& n) : name(n) { }
     
     virtual ~Vehicle() = default;

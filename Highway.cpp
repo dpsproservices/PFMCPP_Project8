@@ -2,7 +2,7 @@
 #include "Car.h"
 #include "Motorcycle.h"
 #include "SemiTruck.h"
-#include "HighwayPatrol.h"
+
 //#include <cassert>
 
 void Highway::changeSpeed(int newSpeed)

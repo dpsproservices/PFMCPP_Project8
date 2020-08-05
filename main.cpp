@@ -127,9 +127,19 @@ int main()
 
     for( Car& car : cars ) 
     {
-        
+        highway.addVehicle(&car);
     }
-    
+
+    for( Motorcycle& motorcycle : motorcycles ) 
+    {
+        highway.addVehicle(&motorcycle);
+    }
+
+    for( SemiTruck& semitruck : trucks ) 
+    {
+        highway.addVehicle(&semitruck);
+    }
+
     HighwayPatrol cop;
     cop.scanHighway(&highway);
 
